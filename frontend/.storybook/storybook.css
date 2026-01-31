@@ -1,0 +1,21 @@
+html,
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+
+  background: var(--c-bg-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0 auto !important;
+  max-width: 1200px;
+}
+
+#root {
+  height: 98%;
+  width: 98%;
+  margin: 0 auto;
+}
