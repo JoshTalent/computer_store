@@ -10,7 +10,9 @@ export const productSchema = new mongoose.Schema({
   Part: {
     type: String,
   },
-  Seller: { type: mongoose.Schema.Types.ObjectId, ref: 'user' },
+  Seller: { 
+    type: mongoose.Schema.Types.ObjectId
+    ref: 'user' },
 
   'Screen Size': {
     type: String,
@@ -31,16 +33,19 @@ export const productSchema = new mongoose.Schema({
     enum: productFieldValues.refreshRate,
     required: true,
   },
+      
   Dimensions: {
     type: String,
     lowercase: true,
     trim: true,
     required: true,
   },
+      
   Weight: {
     type: Number,
     required: true,
   },
+      
   'CPU Core Count': {
     type: Number,
     enum: productFieldValues.cpuCoreCount,
@@ -54,18 +59,22 @@ export const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+      
   Memory: {
     type: Number,
     enum: productFieldValues.memory,
     required: true,
   },
+      
   CPU: {
     type: String,
     required: true,
   },
+      
   'CPU Microarchitecture': {
     type: String,
   },
+      
   'SSD Storage': {
     type: String,
     required: true,
@@ -78,10 +87,12 @@ export const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+      
   GPU: {
     type: String,
     required: true,
   },
+      
   'GPU Memory': {
     type: Number,
     enum: productFieldValues.memory,
@@ -91,6 +102,7 @@ export const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+      
   'SD Card Reader': {
     type: String,
     lowercase: true,
@@ -101,18 +113,22 @@ export const productSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+      
   Images: {
     type: Array,
   },
+      
   Name: {
     type: String,
     required: true,
     text: true,
   },
+      
   Price: {
     type: Number,
     required: true,
   },
+      
   Manufacturer: {
     type: String,
     trim: true,
