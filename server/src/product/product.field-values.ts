@@ -17,6 +17,7 @@ const manufacturer = [
   'Asus',
 ];
 
+
 const resolution = [
   '1280 x 800',
   '1440 x 900',
@@ -39,6 +40,7 @@ const resolution = [
   '2880 x 1800',
   '2732 x 1536',
 ];
+
 const screenPanelType = [
   'IPS',
   'VA',
@@ -51,6 +53,7 @@ const screenPanelType = [
   'P-IPS',
   'AHVA',
 ];
+
 const refreshRate = [60, 75, 90, 120, 144, 240, 320, 160, 165, 180];
 const memory = [1, 2, 3, 4, 6, 8, 12, 14, 16, 18, 20, 24, 32, 64, 128, 512];
 const cpuCoreCount = [1, 2, 3, 4, 6, 8, 12, 14, 16, 18, 20, 24, 32, 64, 128];
