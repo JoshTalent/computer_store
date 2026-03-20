@@ -6,6 +6,7 @@ import { CreateProductDto } from './dto/create-product.dto';
 import { User } from 'src/user/interfaces/user.interface';
 import { listOfNotCalculate } from 'src/utils/filters';
 
+
 @Injectable()
 export class ProductService {
   private filters;
@@ -83,10 +84,10 @@ export class ProductService {
     if (!found) {
       throw new NotFoundException(`Product with ID "${id}" not found`);
     }
-
     return found;
   }
 
+  
   async getManyProduct(idArray: string): Promise<Product[]> {
     try {
       const data = (await this.productModel
@@ -101,12 +102,14 @@ export class ProductService {
       throw new NotFoundException(`Product with  not found`);
     }
   }
+  
 
   async createProduct(createProductDto: CreateProductDto): Promise<Product> {
     const createdProduct = new this.productModel(createProductDto);
     this.createFilters();
     return await createdProduct.save();
   }
+  
 
   async updateProduct(
     createProductDto: CreateProductDto,
@@ -132,6 +135,7 @@ export class ProductService {
     return updatedProduct;
   }
 
+  
   async deleteProduct(id: string, user: User): Promise<{ id: string }> {
     const found = await this.productModel.findOneAndRemove({
       _id: id,
@@ -145,6 +149,7 @@ export class ProductService {
     this.createFilters();
     return { id };
   }
+  
 
   async getAllIds(): Promise<any[]> {
     const list = await this.productModel.distinct('_id');
