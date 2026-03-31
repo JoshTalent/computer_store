@@ -27,3 +27,5 @@ const Chip = ({ category, value, onClick, leftIcon }: Props) => {
 }
 
 export default Chip
+
+
