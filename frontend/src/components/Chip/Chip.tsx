@@ -8,6 +8,7 @@ interface Props {
   onClick: (event: React.MouseEvent<HTMLDivElement>) => void
   leftIcon?: any
 }
+
 const Chip = ({ category, value, onClick, leftIcon }: Props) => {
   return (
     <div className={styles.container}>
