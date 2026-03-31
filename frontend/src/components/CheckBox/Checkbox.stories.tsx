@@ -10,6 +10,7 @@ export default {
   decorators: [withKnobs],
 }
 
+
 export const Default = () => {
   return <Checkbox checked={true} category="Manufacturer" value="Asus" count={12} />
 }
