@@ -3,6 +3,7 @@ import { withKnobs, number } from '@storybook/addon-knobs'
 import Checkbox from './Checkbox'
 import CheckboxList from './CheckboxList'
 
+
 export default {
   component: Checkbox,
   title: 'Checkbox',
