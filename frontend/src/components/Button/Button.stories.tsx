@@ -11,9 +11,11 @@ export default {
   component: Button,
   title: 'Button',
 }
+
 export const Default = () => {
   return <Button>Login</Button>
 }
+
 export const User = () => (
   <IconButton text="UserFullName" icon={<UserIcon iconWidth="24" iconHeight="24"></UserIcon>}></IconButton>
 )
