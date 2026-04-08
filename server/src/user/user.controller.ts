@@ -15,7 +15,6 @@ import { GetUser } from 'src/auth/decorators/get-user.decorator';
 import { User } from './interfaces/user.interface';
 import { UserDto } from './dto/user.dto';
 
-
 @Controller('user')
 @UseGuards(AuthGuard())
 export class UserController {
