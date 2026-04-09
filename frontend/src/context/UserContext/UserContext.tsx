@@ -2,6 +2,7 @@ import React, { createContext, useContext, useReducer, useState, useEffect } fro
 import { API_AddOneToCart, API_RemoveAllFromCart, API_RemoveOneFromCart } from 'src/utils/api'
 import { IUserContext, Action, User, ActionCart } from './interfaces'
 
+
 export const UserContext = createContext<IUserContext | undefined>(undefined)
 
 const userReducer = (state: User | null, action: Action): User | null => {
