@@ -7,6 +7,7 @@ export const UserContext = createContext<IUserContext | undefined>(undefined)
 const userReducer = (state: User | null, action: Action): User | null => {
   let oldState = null
   switch (action.type) {
+      
     case 'save':
       const newState = { ...(action.payload as User) }
       newState.shoppingCart = Array.from(new Set(newState.shoppingCart))
