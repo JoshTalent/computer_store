@@ -41,6 +41,7 @@ const userReducer = (state: User | null, action: Action): User | null => {
   }
 }
 
+
 const cartInLocalStorageReducer = (state: string, action: ActionCart): string => {
   let oldState = state
 
