@@ -63,6 +63,7 @@ export interface Product {
   Seller: string
 }
 
+
 export interface ProductPreview {
   _id: string
   Images: string[]
