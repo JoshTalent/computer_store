@@ -142,6 +142,7 @@ export const UserContextProvider: React.FC = ({ children }) => {
   )
 }
 
+
 export const useUserContext = () => {
   const context = useContext(UserContext)
   if (context === undefined) {
