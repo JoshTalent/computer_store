@@ -11,6 +11,7 @@ export interface Action {
   type: 'save' | 'delete' | 'update-cart' | 'delete-from-cart-one' | 'delete-from-cart-all' | 'save-cart'
   payload: User | string | string[]
 }
+
 export interface ActionCart {
   type: 'add-to-cart-one' | 'delete-from-cart-one' | 'delete-from-cart-all'
   payload: string
