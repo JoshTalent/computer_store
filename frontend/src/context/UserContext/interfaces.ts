@@ -16,6 +16,7 @@ export interface ActionCart {
   type: 'add-to-cart-one' | 'delete-from-cart-one' | 'delete-from-cart-all'
   payload: string
 }
+
 export interface IUserContext {
   userState: User | null
   accessToken: string | null
