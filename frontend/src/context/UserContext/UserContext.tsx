@@ -78,6 +78,7 @@ export const UserContextProvider: React.FC = ({ children }) => {
       return ''
     }
   })
+  
 
   const addOneToCart = async (id: string) => {
     const type = 'add-to-cart-one'
