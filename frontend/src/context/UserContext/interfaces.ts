@@ -28,6 +28,7 @@ export interface IUserContext {
   removeAllFromCart: () => Promise<void>
 }
 
+
 export interface Product {
   _id: string
   Manufacturer: string
