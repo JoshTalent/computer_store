@@ -37,6 +37,7 @@ const userReducer = (state: User | null, action: Action): User | null => {
 
     default:
       return state
+      
   }
 }
 
