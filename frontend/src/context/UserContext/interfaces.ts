@@ -6,6 +6,7 @@ export interface User {
   addresses: []
 }
 
+
 export interface Action {
   type: 'save' | 'delete' | 'update-cart' | 'delete-from-cart-one' | 'delete-from-cart-all' | 'save-cart'
   payload: User | string | string[]
