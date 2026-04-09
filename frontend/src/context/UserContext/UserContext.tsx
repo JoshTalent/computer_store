@@ -20,6 +20,7 @@ const userReducer = (state: User | null, action: Action): User | null => {
     case 'update-cart':
       return { ...(state as User), shoppingCart: action.payload as string[] }
 
+      
     case 'delete-from-cart-one':
       oldState = { ...state } as User
       oldState.shoppingCart.filter(e => e !== (action.payload as string))
