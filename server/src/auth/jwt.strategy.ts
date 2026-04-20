@@ -6,6 +6,7 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { JwtPayload } from './interfaces/jwt-payload.interface';
 
+
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(@InjectModel('user') private readonly userModel: Model<User>) {
@@ -16,6 +17,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     });
   }
 
+  
   async validate(payload: JwtPayload): Promise<User> {
     const user = await this.userModel.findOne({ email: payload.email });
     if (!user) {
@@ -23,4 +25,5 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     }
     return user;
   }
+  
 }
