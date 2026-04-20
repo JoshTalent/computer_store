@@ -10,7 +10,6 @@ import Modal from 'src/components/Modal'
 import CheckIcon from 'src/components/Icons/CheckIcon'
 import { useRouter } from 'next/router'
 
-
 const index = () => {
   const router = useRouter()
   const [products, setProducts] = useState<ProductPreview[]>([])
@@ -21,16 +20,13 @@ const index = () => {
     getProducts()
   }, [userState?.shoppingC
       art])
-
   const deleteHandler = async (id: string) => {
     await removeOneFromCart(id)
     getProducts()
-    
   }
   async function getProducts() {
     let cartArray = null
 
-    
     if (userState) {
       cartArray = userState.shoppingCart.toString()
     } else {
@@ -49,7 +45,6 @@ const index = () => {
       setProducts([])
     }
   }
-
 
   const getTotalPaymentAndProductCount = useMemo(() => {
     let total = 0
@@ -70,7 +65,6 @@ const index = () => {
       router.push('/auth')
     }
   }
-
   return (
     <div className={styles.container}>
       <div className={styles.summary}>
@@ -104,7 +98,6 @@ const index = () => {
           })}
         </ul>
       </div>
-
       <Modal visible={modalIsOpen} onClose={() => router.push('/')}>
         <div className={styles.modal_content}>
           <div className={styles.modal_icon}>
