@@ -19,15 +19,18 @@ const index = () => {
 
   useEffect(() => {
     getProducts()
-  }, [userState?.shoppingCart])
+  }, [userState?.shoppingC
+      art])
 
   const deleteHandler = async (id: string) => {
     await removeOneFromCart(id)
     getProducts()
+    
   }
   async function getProducts() {
     let cartArray = null
 
+    
     if (userState) {
       cartArray = userState.shoppingCart.toString()
     } else {
