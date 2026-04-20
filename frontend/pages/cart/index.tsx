@@ -10,7 +10,6 @@ import Modal from 'src/components/Modal'
 import CheckIcon from 'src/components/Icons/CheckIcon'
 import { useRouter } from 'next/router'
 
-
 const index = () => {
   const router = useRouter()
   const [products, setProducts] = useState<ProductPreview[]>([])
@@ -25,10 +24,8 @@ const index = () => {
     await removeOneFromCart(id)
     getProducts()
   }
-  
   async function getProducts() {
     let cartArray = null
-
     if (userState) {
       cartArray = userState.shoppingCart.toString()
     } else {
@@ -54,7 +51,6 @@ const index = () => {
     })
     return { total, count }
   }, [products])
-
   const placeOrder = async () => {
     if (userState) {
       await removeAllFromCart()
