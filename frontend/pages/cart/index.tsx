@@ -25,6 +25,7 @@ const index = () => {
     await removeOneFromCart(id)
     getProducts()
   }
+  
   async function getProducts() {
     let cartArray = null
 
