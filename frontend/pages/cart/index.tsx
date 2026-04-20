@@ -34,12 +34,10 @@ const index = () => {
     } else {
       cartArray = window.localStorage.getItem('cart')?.slice(0, -1)
     }
-
     if (!cartArray) {
       setProducts([])
       return 
     }
-
     const data = await API_GetProducts(cartArray as string)
     if (data) {
       setProducts(data)
@@ -47,7 +45,6 @@ const index = () => {
       setProducts([])
     }
   }
-
   const getTotalPaymentAndProductCount = useMemo(() => {
     let total = 0
     let count = 0
@@ -114,6 +111,4 @@ const index = () => {
     </div>
   )
 }
-
-
 export default index
