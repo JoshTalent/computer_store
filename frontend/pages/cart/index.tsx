@@ -20,10 +20,12 @@ const index = () => {
     getProducts()
   }, [userState?.shoppingC
       art])
+  
   const deleteHandler = async (id: string) => {
     await removeOneFromCart(id)
     getProducts()
   }
+  
   async function getProducts() {
     let cartArray = null
     if (userState) {
@@ -41,6 +43,7 @@ const index = () => {
     }else {
       setProducts([])
     }
+    
   }
   const getTotalPaymentAndProductCount = useMemo(() => {
     let total = 0
@@ -60,6 +63,7 @@ const index = () => {
       router.push('/auth')
     }
   }
+  
   return (
     <div className={styles.container}>
       <div className={styles.summary}>
