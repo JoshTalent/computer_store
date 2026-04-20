@@ -75,6 +75,7 @@ const index = () => {
           place your order
         </button>
       </div>
+      
       <div className={styles.cart_list_section}>
         <ul className={styles.product_list}>
           {products?.map(e => {
@@ -96,7 +97,9 @@ const index = () => {
             )
           })}
         </ul>
+        
       </div>
+      
       <Modal visible={modalIsOpen} onClose={() => router.push('/')}>
         <div className={styles.modal_content}>
           <div className={styles.modal_icon}>
@@ -108,7 +111,9 @@ const index = () => {
           </div>
         </div>
       </Modal>
+      
     </div>
   )
 }
+
 export default index
