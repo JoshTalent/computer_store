@@ -8,4 +8,3 @@ export const GetUser = createParamDecorator(
     return req.user;
   },
 );
-
