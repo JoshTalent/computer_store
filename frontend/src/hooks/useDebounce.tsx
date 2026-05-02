@@ -22,5 +22,4 @@ export const useDebounce = (value: string, delay: number = 60) => {
   )
 
   return debouncedValue
-  
 }
