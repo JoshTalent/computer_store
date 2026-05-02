@@ -4,6 +4,7 @@ export const useDebounce = (value: string, delay: number = 60) => {
   // State and setters for debounced value
   const [debouncedValue, setDebouncedValue] = useState(value)
 
+  
   useEffect(
     () => {
       // Update debounced value after delay
@@ -21,5 +22,6 @@ export const useDebounce = (value: string, delay: number = 60) => {
     [value, delay], // Only re-call effect if value or delay changes
   )
 
+  
   return debouncedValue
 }
