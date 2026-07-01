@@ -1,5 +1,4 @@
 <!-- prettier-ignore-start -->
-
 <h1 align="center">
   Computer Store
 </h1>
@@ -29,7 +28,6 @@ Frontend
 
 
 
-
 # How to use
 ### Quick Start
 ```bash
@@ -45,7 +43,6 @@ To use these systems, simply enter the necessary variables in the .env file.
 
 
 How to use MongoDB Atlas -> https://docs.atlas.mongodb.com/getting-started
-
 
 
 `
