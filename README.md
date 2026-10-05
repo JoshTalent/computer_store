@@ -17,6 +17,7 @@ Frontend
 - Typescript 
 - PostCSS
 - Storybook
+- 
 
  
  Backend
