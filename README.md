@@ -18,7 +18,6 @@ Frontend
 - PostCSS
 - Storybook
 
-
  
  Backend
 - Nest.js / Express
