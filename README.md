@@ -19,7 +19,7 @@ Frontend
 - Storybook
   
 
- 
+
  Backend
 - Nest.js / Express
 - Typescript 
