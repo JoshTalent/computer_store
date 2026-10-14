@@ -11,7 +11,6 @@
 🚀 [Live Demo](https://computer-store.vercel.app/)
 
 
-
 #  Tech Stack 
 Frontend
 - React  / Next.js
