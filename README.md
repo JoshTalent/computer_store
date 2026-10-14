@@ -5,7 +5,6 @@
   Computer Store
 </h1>
 
-
 > 🚨  This is not a commercial project. I did it to improve my knowledge ❤
 
 🚀 [Live Demo](https://computer-store.vercel.app/)
