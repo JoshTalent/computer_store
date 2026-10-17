@@ -1,5 +1,3 @@
-
-
 <!-- prettier-ignore-start -->
 <h1 align="center">
   Computer Store
